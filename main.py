@@ -2,6 +2,7 @@ import requests
 import time
 from bs4 import BeautifulSoup
 
+print("✅ Imports OK")
 URL = "https://www.rdv-prefecture.interieur.gouv.fr/rdvpref/reservation/demarche/11800/creneau/"
 BOT_TOKEN = "8425911873:AAFXQCBvd2Kf4oxNuWPMfdIcKSW8cGM3eceE"
 CHAT_ID = "1244185550"
@@ -28,6 +29,7 @@ def check_slots():
         return True
     return False
 
+print("⚡ Envoi message Telegram...")
 send_telegram("🤖 Surveillance des RDV préfecture ACTIVÉE (check toutes les 60 secondes)")
 
 while True:
