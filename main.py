@@ -3,7 +3,8 @@ import time
 from bs4 import BeautifulSoup
 
 URL = "https://www.rdv-prefecture.interieur.gouv.fr/rdvpref/reservation/demarche/11800/creneau/"
-BOT_TOKEN = "8425911873:AAFXQCBvd2Kf4oxNuWPMfdIcKSW8cGM3eceE"CHAT_ID = "1244185550"
+BOT_TOKEN = "8425911873:AAFXQCBvd2Kf4oxNuWPMfdIcKSW8cGM3eceE"
+CHAT_ID = "1244185550"
 
 def send_telegram(message):
     url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
